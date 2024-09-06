@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Curved Bottom Rectangle</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>DigiLock</h1>
+        </div>
+        <div class="header-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="header-text">
+            <h1>Secure Your Docs using .pii</h1>
+        </div>
+        <div class="header-image">
+            <img src="images/lockkey.png" alt="Lock and Key">
+        </div>
+    </header>
+    <main>
+    <section>
+        <h2>Find Documents based on Categories</h2>
+    </section>
+    <section2>
+        <div class="image-container">
+            <img src="images/AN.png" alt="Central-gov">
+            <p>Central Government</p>
+        </div>
+        <div class="image-container">
+            <img src="images/HealthIcon.png" alt="Health">
+            <p>Health & Wellness</p>
+        </div>
+        <div class="image-container">
+            <img src="images/AN.png" alt="Central-gov">
+            <p>State Government</p>
+        </div>
+        <div class="image-container">
+            <img src="images/DefenceIcon (1).png" alt="Defence">
+            <p>Ministry of Defence</p>
+        </div>
+        <div class="image-container">
+            <img src="images/Finance.png" alt="Finance">
+            <p>Banking & Finances</p>
+        </div>
+    </section2>
+    <div class="explore-more-container">
+        <h6 class="explore-more">Explore More &gt;</h6>
+    </div>
+    <section>
+        <h2>Secure your documents with us</h2>
+    </section>
+    <section2>
+        <div class="image-container">
+            <img src="images/Untitled design (2).png" alt="Central-gov">
+            <p>Scanner</p>
+        </div>
+        <div class="image-container">
+            <img src="images/Untitled design (3).png" alt="Health">
+            <p>Request/Verify</p>
+        </div>
+        <div class="image-container">
+            <img src="images/Untitled design (4).png" alt="Central-gov">
+            <p>Documents</p>
+        </div>
+        <div class="image-container">
+            <img src="images/Untitled design (5).png" alt="Defence">
+            <p>Family</p>
+        </div>
+    </section2>
+</main>
+    <footer class="curved-menu">
+        <nav class="menu">
+            <ul>
+                <li class="active"><a href="#"><i class="fas fa-home"></i></a></li> <!-- Home is active -->
+                <li><a href="#"><i class="fa-solid fa-folder"></i></a></li>
+                <li><a href="upload.html"><i class="fa-solid fa-plus"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-gears"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+        function handleMenuClick(event) {
+            document.querySelectorAll('footer.curved-menu nav.menu ul li').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+
+        document.querySelectorAll('footer.curved-menu nav.menu ul li').forEach(item => {
+            item.addEventListener('click', handleMenuClick);
+        });
+    </script>
+</body>
+</html>

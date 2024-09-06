@@ -77,6 +77,10 @@ header, footer.curved-menu {
     height: 170px; /* Adjust size of the image as needed */
 }
 
+section{
+    padding: 15px;
+}
+
 section2 {
     display: flex; /* Aligns all images in a row */
     justify-content: space-around; /* Even spacing between images */
@@ -96,7 +100,7 @@ section2 {
 }
 
 .image-container p {
-    font-size: 14px; /* Adjust the text size for titles */
+    font-size: 13px;/* Adjust the text size for titles */
     color: #333; /* Optional text color */
 }
 

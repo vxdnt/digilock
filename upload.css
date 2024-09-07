@@ -95,6 +95,7 @@ section2 {
 .image-container img {
     height: 70px; /* Adjust the height of the images */
     width: auto; /* Maintain aspect ratio */
+    cursor: pointer;
     border-radius: 10px;
     margin-bottom: 10px; /* Adds space between the image and the title */
 }

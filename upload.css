@@ -94,8 +94,8 @@ section2 {
 
 .image-container img {
     height: 70px; /* Adjust the height of the images */
-    width: auto; /* Maintain aspect ratio */
     cursor: pointer;
+    width: auto; /* Maintain aspect ratio */
     border-radius: 10px;
     margin-bottom: 10px; /* Adds space between the image and the title */
 }
@@ -155,3 +155,5 @@ footer.curved-menu nav.menu ul li.active a {
 footer.curved-menu nav.menu ul li a:hover {
     color: #06021b;
 }
+
+/* Add styles for the confirmation message */

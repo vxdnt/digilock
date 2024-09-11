@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="upload.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Curved Bottom Rectangle</title>
+    <title>Upload Docs</title>
+    <style>
+        /* Add styles for the confirmation message */
+        .confirmation-message {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,85 +31,60 @@
             <i class="fas fa-user"></i>
         </div>
         <div class="header-text">
-            <h1>Secure Your Docs using .pii</h1>
+            <h1>Store Your Documents</h1>
+            <p>Keep your documents secured with restricted access.</p>
         </div>
         <div class="header-image">
-            <img src="images/lockkey.png" alt="Lock and Key">
+            <img src="images/1725638824410.png" alt="Lock and Key">
         </div>
     </header>
-    <main>
+    
     <section>
-        <h2>Find Documents based on Categories</h2>
+        <h2>Upload your Documents</h2>
     </section>
+
     <section2>
         <div class="image-container">
-            <img src="images/AN.png" alt="Central-gov">
-            <p>Central Government</p>
+            <img id="upload-files" src="images/Untitled design (6).png" alt="Upload Files">
+            <p>Upload Files</p>
         </div>
         <div class="image-container">
-            <img src="images/HealthIcon.png" alt="Health">
-            <p>Health & Wellness</p>
+            <img id="camera-click" src="images/Untitled design (7).png" alt="Camera">
+            <p>Camera</p>
         </div>
         <div class="image-container">
-            <img src="images/AN.png" alt="Central-gov">
-            <p>State Government</p>
+            <img src="images/Untitled design (8).png" alt="Create PDF">
+            <p>Create PDF</p>
         </div>
         <div class="image-container">
-            <img src="images/DefenceIcon (1).png" alt="Defence">
-            <p>Ministry of Defence</p>
-        </div>
-        <div class="image-container">
-            <img src="images/Finance.png" alt="Finance">
-            <p>Banking & Finances</p>
+            <img src="images/Untitled design (9).png" alt="Gallery">
+            <p>Gallery</p>
         </div>
     </section2>
-    <div class="explore-more-container">
-        <h6 class="explore-more">Explore More &gt;</h6>
+
+    <!-- Hidden file input for uploading -->
+    <input type="file" id="file-input" style="display: none;" multiple>
+
+    <!-- Hidden file input for camera capture -->
+    <input type="file" id="camera-input" accept="image/*;capture=camera" style="display: none;">
+
+    <!-- Confirmation message -->
+    <div class="confirmation-message" id="confirmation-message">
+        Uploaded successfully !
     </div>
-    <section>
-        <h2>Secure your documents with us</h2>
-    </section>
-    <section2>
-        <div class="image-container">
-            <img src="images/Untitled design (2).png" alt="Central-gov">
-            <p>Scanner</p>
-        </div>
-        <div class="image-container">
-            <img src="images/Untitled design (3).png" alt="Health">
-            <p>Request/Verify</p>
-        </div>
-        <div class="image-container">
-            <img src="images/Untitled design (4).png" alt="Central-gov">
-            <p>Documents</p>
-        </div>
-        <div class="image-container">
-            <img src="images/Untitled design (5).png" alt="Defence">
-            <p>Family</p>
-        </div>
-    </section2>
-</main>
+
     <footer class="curved-menu">
         <nav class="menu">
             <ul>
-                <li class="active"><a href="index.html"><i class="fas fa-home"></i></a></li> <!-- Home is active -->
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-folder"></i></a></li>
-                <li><a href="upload.html"><i class="fa-solid fa-plus"></i></a></li>
+                <li class="active"><a href="upload.html"><i class="fa-solid fa-plus"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-bell"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-gears"></i></a></li>
             </ul>
         </nav>
     </footer>
-    <script>
-        function handleMenuClick(event) {
-            document.querySelectorAll('footer.curved-menu nav.menu ul li').forEach(item => {
-                item.classList.remove('active');
-            });
-            event.currentTarget.classList.add('active');
-        }
 
-        document.querySelectorAll('footer.curved-menu nav.menu ul li').forEach(item => {
-            item.addEventListener('click', handleMenuClick);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

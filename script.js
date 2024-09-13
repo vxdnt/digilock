@@ -9,6 +9,9 @@ document.querySelectorAll('footer.curved-menu nav.menu ul li').forEach(item => {
     item.addEventListener('click', handleMenuClick);
 });
 
+
+
+
 // File input handling for uploading files
 const fileInput = document.getElementById('file-input');
 const uploadFilesImage = document.getElementById('upload-files');
@@ -32,7 +35,7 @@ fileInput.addEventListener('change', (event) => {
         }, 3000); // Hide after 3 seconds
     }
 });
-
+/*
 // Camera input handling
 const cameraInput = document.getElementById('camera-input');
 const cameraClickImage = document.getElementById('camera-click');
@@ -49,4 +52,4 @@ cameraInput.addEventListener('change', (event) => {
     if (photo) {
         console.log('Photo captured:', photo);
     }
-});
+});*/
